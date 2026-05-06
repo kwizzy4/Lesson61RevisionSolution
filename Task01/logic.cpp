@@ -7,3 +7,21 @@
 // удовлетворяло следующему неравенству a >= b >= c.
 // 
 // На базе данной функции необходимо реализовать тестовый или полноценный проект.
+#include "logic.h"
+void sortDescending(int& a, int& b, int& c) {
+	if (a < b) {
+		int temp = a;
+		a = b;
+		b = temp;
+	}
+	if (a < c) {
+		int temp = a;
+		a = c;
+		c = temp;
+	}
+	if (b < c) {
+		int temp = b;
+		b = c;
+		c = temp;
+	}
+}
